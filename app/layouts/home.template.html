@@ -1,0 +1,52 @@
+<section class="area_pesquisa">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 pesquisa_box">
+				<div class="titulo_curso text-center">
+					<h1>
+						Encontre o curso ideal para você:
+          </h1>
+          <p>
+            Queremos te ajudar a encontrar a melhor maneira de seguir com a sua jornada acadêmica. <br>
+            Preencha os dados abaixo que iremos encontrar os melhores cursos para você.
+          </p>
+				</div>
+				<form ng-submit="vm.busca(vm.user)">
+					<div class="box_pesquisa">
+						<h2 class="text-center">
+              Encontre o curso ideal para você:
+						</h2>
+						<div class="area_inputs w-100">
+							<div class="row">
+								<div class="col-12 text-center">
+									<input type="text" class="input" placeholder="Nome" required="" ng-model="vm.user.modalidade">
+								</div>
+								<div class="col-12 text-center">
+									<input type="email" class="input" placeholder="E-mail" required="" ng-model="vm.user.area">
+								</div>
+								<div class="col-12 text-center">
+									<input type="text" class="input" ui-br-phone-number placeholder="Telefone" required="" ng-model="vm.user.localizacao">
+                </div>
+                <div class="col-12 text-center">
+                  <textarea placeholder="Área de interesse" class="input" rows="8"></textarea>
+                </div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<button type="submit" class="botao_submit">
+							Enviar <img src="midia/chapeu_branco.png">
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="home_description">
+	<div class="row">
+		<div class="col-12 text-left">
+
+		</div>
+	</div>
+</section>

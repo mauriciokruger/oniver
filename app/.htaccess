@@ -1,0 +1,11 @@
+<ifModule mod_rewrite.c>
+# Required to allow direct-linking of pages so they can be processed by Angular
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !index
+RewriteRule (.*) index.php [L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.*)
+RewriteRule (.*) http://soumulti.com.br/cliente/estilo/ [R=301,L]
+</ifModule>

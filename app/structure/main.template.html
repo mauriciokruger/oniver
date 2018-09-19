@@ -1,0 +1,49 @@
+<header>
+	<div class="menu_fixo w-100">
+		<div class="row h-100 align-items-center justify-content-center">
+			<div class="col-md-5 col-6 d-none">
+				<div class="menu_abrir" ng-click="menuOpen = true">
+					<img src="midia/menu_mobile.jpg">
+				</div>
+
+			</div>
+			<div class="col-md-3 col-6 logo text-cencer">
+				<a href="{{baseUrl}}">
+					<img src="midia/logo_topo.png">
+				</a>
+				<span class="jornada">
+					Onde a sua jornada começa. <img src="midia/chapeu.png">
+				</span>
+			</div>
+			<div class="col-md-4 text-right area_cadastro d-none">
+				<a href="">
+					Cadastro
+				</a>
+				<a href="http://facebook.com/" target="_blank" class="face-icon">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="menu-mobile" ng-class="{'menu-mobile--active': menuOpen}">
+		<div class="menu-mobile__overflow"></div>
+		<div class="menu-mobile__wrapper" ng-click="menuOpen = false">
+			<button class="menu-mobile__close"><i class="fa fa-times" aria-hidden="true" ng-click="menuOpen = false"></i></button>
+			<nav class="menu-mobile__wrapper__content">
+				<ul>
+					<li class="link"><a ui-sref="/">Menu</a></li>
+					<li class="link"><a ui-sref="/">Menu</a></li>
+					<li class="link"><a ui-sref="/">Menu</a></li>
+					<li class="link"><a ui-sref="/">Menu</a></li>
+					<li class="link"><a ui-sref="/">Menu</a></li>
+					<li class="link"><a ui-sref="/">Menu</a></li>
+					<li class="link sair"><a ng-click="menuOpen = false">Sair</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<main ui-view></main>
+<footer>
+
+</footer>

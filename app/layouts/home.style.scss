@@ -1,0 +1,83 @@
+.menu_fixo{
+	position: fixed;
+	top: 0px;
+	padding: 30px 50px;
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
+	background: $branco;
+	z-index: 150;
+	.menu_abrir{
+		cursor: pointer;
+	}
+	.logo{
+    text-align: center;
+		.jornada{
+			width: 100%;
+      float: left;
+      text-align: center;
+			margin-top: 5px;
+			color: $descricao;
+			font-size: 18px;
+		}
+	}
+	.area_cadastro{
+		a{
+			font-size: 20px;
+			font-weight: bold;
+			color: $secundaria;
+			text-transform: uppercase;
+		}
+		.face-icon{
+			margin-left: 90px;
+			i{
+				font-size: 30px;
+			}
+		}
+	}
+}
+.area_pesquisa{
+	height: 100%;
+	padding-top: 120px;
+  background-image: url(../midia/bg_home.jpg);
+  padding-bottom: 60px;
+	.pesquisa_box{
+		.titulo_curso{
+			margin-top: 80px;
+			margin-bottom: 25px;
+			h1{
+				color: $branco;
+				font-size: 36px;
+				line-height: 36px;
+      }
+      p {
+        color: white;
+        font-size: 16px;
+      }
+		}
+		.box_pesquisa{
+			max-width: 645px;
+			margin: 0 auto;
+			padding: 50px;
+			border-radius: 30px;
+			border: 2px #83807f dashed;
+			h2{
+				color: $branco;
+				font-size: 30px;
+				line-height: 30px;
+				margin-bottom: 30px;
+			}
+		}
+		.botao_submit{
+			border-radius: 50px;
+			background: $verde;
+			cursor: pointer;
+			margin-top: 40px;
+			color: $branco;
+			font-size: 24px;
+			border: none;
+			padding: 20px 60px;
+			img{
+				margin-left: 20px;
+			}
+		}
+	}
+}

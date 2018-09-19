@@ -1,0 +1,92 @@
+.loading{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 2500;
+	position: fixed;
+}
+.loading_area{
+	width: 100%;
+    text-align: center;
+    margin-top: 20%;
+    height: 100%;
+}
+.cssload-loader{
+	position: relative;
+	width: 24px;
+	height: 24px;
+	left: 46%;
+	left: calc(50% - 12px);
+		left: -o-calc(50% - 12px);
+		left: -ms-calc(50% - 12px);
+		left: -webkit-calc(50% - 12px);
+		left: -moz-calc(50% - 12px);
+	
+	border-radius: 24px;
+	background-color: rgb(195,1,108);
+	transform-origin:	50% 50%;
+		-o-transform-origin:	50% 50%;
+		-ms-transform-origin:	50% 50%;
+		-webkit-transform-origin:	50% 50%;
+		-moz-transform-origin:	50% 50%;
+	animation: cssload-loader 0.7s ease-in-out infinite;
+		-o-animation: cssload-loader 0.7s ease-in-out infinite;
+		-ms-animation: cssload-loader 0.7s ease-in-out infinite;
+		-webkit-animation: cssload-loader 0.7s ease-in-out infinite;
+		-moz-animation: cssload-loader 0.7s ease-in-out infinite;
+}
+
+.cssload-loader:before{
+	content: "";
+	position: absolute;
+	background-color: rgb(43,0,74);
+	top: 0px;
+	left: -50px;
+	height: 24px;
+	width: 24px;
+	border-radius: 24px;
+}
+
+.cssload-loader:after{
+	content: "";
+	position: absolute;
+	background-color: rgb(255,191,62);
+	top: 0px;
+	left: 50px;
+	height: 24px;
+	width: 24px;
+	border-radius: 24px;
+}
+
+
+
+
+@keyframes cssload-loader{
+		0%{transform:rotate(0deg);}
+		50%{transform:rotate(180deg);}
+		100%{transform:rotate(180deg);}
+}
+
+@-o-keyframes cssload-loader{
+		0%{-o-transform:rotate(0deg);}
+		50%{-o-transform:rotate(180deg);}
+		100%{-o-transform:rotate(180deg);}
+}
+
+@-ms-keyframes cssload-loader{
+		0%{-ms-transform:rotate(0deg);}
+		50%{-ms-transform:rotate(180deg);}
+		100%{-ms-transform:rotate(180deg);}
+}
+
+@-webkit-keyframes cssload-loader{
+		0%{-webkit-transform:rotate(0deg);}
+		50%{-webkit-transform:rotate(180deg);}
+		100%{-webkit-transform:rotate(180deg);}
+}
+
+@-moz-keyframes cssload-loader{
+		0%{-moz-transform:rotate(0deg);}
+		50%{-moz-transform:rotate(180deg);}
+		100%{-moz-transform:rotate(180deg);}
+}
